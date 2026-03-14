@@ -1,11 +1,15 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import CheckoutModal from "./CheckoutModal";
 
 const plans = [
   {
+    id: "basic" as const,
     name: "Basic",
     tag: "For Freelancers",
     price: "₹1,999",
+    amount: 1999,
     popular: false,
     features: [
       "Standalone .exe file",
@@ -14,9 +18,11 @@ const plans = [
     ],
   },
   {
+    id: "business" as const,
     name: "Business",
     tag: "Most Popular",
     price: "₹6,500",
+    amount: 6500,
     popular: true,
     features: [
       "Everything in Basic",
@@ -26,9 +32,11 @@ const plans = [
     ],
   },
   {
+    id: "enterprise" as const,
     name: "Enterprise",
     tag: "For Growing Firms",
     price: "₹9,999",
+    amount: 9999,
     popular: false,
     features: [
       "Everything in Business",
@@ -41,7 +49,11 @@ const plans = [
 
 const ease = [0.25, 0.1, 0.25, 1] as [number, number, number, number];
 
+export type Plan = (typeof plans)[number];
+
 const PricingSection = () => {
+  const [selectedPlan, setSelectedPlan] = useState<Plan | null>(null);
+
   return (
     <section id="pricing" className="py-20 md:py-28">
       <div className="container mx-auto px-6">
@@ -95,6 +107,7 @@ const PricingSection = () => {
               </ul>
 
               <button
+                onClick={() => setSelectedPlan(plan)}
                 className={`w-full py-3 rounded-lg font-semibold text-sm transition-all duration-200 active:scale-[0.98] ${
                   plan.popular
                     ? "bg-primary text-primary-foreground hover:bg-primary-hover shadow-button"
@@ -107,6 +120,13 @@ const PricingSection = () => {
           ))}
         </div>
       </div>
+
+      {selectedPlan && (
+        <CheckoutModal
+          plan={selectedPlan}
+          onClose={() => setSelectedPlan(null)}
+        />
+      )}
     </section>
   );
 };
