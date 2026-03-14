@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import appScreenshot from "@/assets/app-screenshot.png";
 
-const ease = [0.25, 0.1, 0.25, 1];
+const ease = [0.25, 0.1, 0.25, 1] as [number, number, number, number];
 
 const HeroSection = () => {
   return (
