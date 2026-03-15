@@ -49,18 +49,46 @@ const HeroSection = () => {
               {/* Window chrome */}
               <div className="flex items-center gap-2 px-4 py-2.5 bg-foreground rounded-t-lg">
                 <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-red-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-green-500/80" />
+                  <div className="w-3 h-3 rounded-full bg-destructive/80" />
+                  <div className="w-3 h-3 rounded-full bg-accent/80" />
+                  <div className="w-3 h-3 rounded-full bg-primary/80" />
                 </div>
                 <span className="text-xs text-primary-foreground/50 ml-2 font-medium">Enterprise GST Pro v3.2</span>
               </div>
-              <img
-                src={appScreenshot}
-                alt="Enterprise GST Pro desktop application showing GST invoice management interface"
-                className="w-full rounded-b-lg"
-                loading="eager"
-              />
+              <div className="relative">
+                <img
+                  src={slides[currentSlide]}
+                  alt={`Enterprise GST Pro desktop application - view ${currentSlide + 1}`}
+                  className="w-full rounded-b-lg"
+                  loading="eager"
+                />
+                {/* Navigation arrows */}
+                <button
+                  onClick={() => setCurrentSlide(0)}
+                  className={`absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center transition-opacity ${currentSlide === 0 ? 'opacity-0 pointer-events-none' : 'opacity-100 hover:bg-background'}`}
+                  aria-label="Previous slide"
+                >
+                  <ChevronLeft className="h-4 w-4 text-foreground" />
+                </button>
+                <button
+                  onClick={() => setCurrentSlide(1)}
+                  className={`absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center transition-opacity ${currentSlide === 1 ? 'opacity-0 pointer-events-none' : 'opacity-100 hover:bg-background'}`}
+                  aria-label="Next slide"
+                >
+                  <ChevronRight className="h-4 w-4 text-foreground" />
+                </button>
+                {/* Dots */}
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+                  {slides.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setCurrentSlide(i)}
+                      className={`w-2 h-2 rounded-full transition-all ${i === currentSlide ? 'bg-primary w-4' : 'bg-background/60'}`}
+                      aria-label={`Go to slide ${i + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
