@@ -29,7 +29,7 @@ const ProcessSection = () => {
           <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-4">
             Seamless Access via Razorpay
           </h2>
-          <p className="text-base text-muted">Three steps to get started with Enterprise GST Pro.</p>
+          <p className="text-base text-muted">Three steps to get started with My CRM.</p>
         </div>
 
         <div className="flex flex-col md:flex-row items-start gap-6 max-w-4xl mx-auto">

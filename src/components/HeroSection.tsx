@@ -52,12 +52,12 @@ const HeroSection = () => {
                   <div className="w-3 h-3 rounded-full bg-accent/80" />
                   <div className="w-3 h-3 rounded-full bg-primary/80" />
                 </div>
-                <span className="text-xs text-primary-foreground/50 ml-2 font-medium">Enterprise GST Pro v3.2</span>
+                <span className="text-xs text-primary-foreground/50 ml-2 font-medium">My CRM v3.2</span>
               </div>
               <div className="relative">
                 <img
                   src={slides[currentSlide]}
-                  alt={`Enterprise GST Pro desktop application - view ${currentSlide + 1}`}
+                  alt={`My CRM desktop application - view ${currentSlide + 1}`}
                   className="w-full rounded-b-lg"
                   loading="eager"
                 />
