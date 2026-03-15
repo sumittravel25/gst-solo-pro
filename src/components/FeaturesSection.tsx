@@ -3,19 +3,19 @@ import { Calculator, ShieldCheck, UserCheck, FileImage, CheckCircle, IndianRupee
 
 const features = [
   {
+    icon: UserCheck,
+    title: "Complete CRM",
+    description: "Manage clients, leads, and contacts — all from one unified desktop application.",
+  },
+  {
     icon: Calculator,
-    title: "GST Intelligence",
-    description: "Automatic CGST/SGST and IGST splitting based on transaction type.",
+    title: "Built-in Invoice Generator",
+    description: "Generate GST-compliant invoices with automatic CGST/SGST and IGST calculations.",
   },
   {
     icon: ShieldCheck,
     title: "100% Offline Privacy",
     description: "Your data stays on your PC, never on the cloud. Ideal for privacy-conscious businesses.",
-  },
-  {
-    icon: UserCheck,
-    title: "Persistent Profiles",
-    description: "Save your business and bank details once; auto-fill for every future invoice.",
   },
   {
     icon: FileImage,
