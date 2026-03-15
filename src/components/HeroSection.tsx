@@ -10,6 +10,8 @@ const slides = [appScreenshot1, appScreenshot2];
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  return (
     <section className="py-20 md:py-28">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
