@@ -21,8 +21,8 @@ const plans = [
     id: "business" as const,
     name: "Business",
     tag: "Most Popular",
-    price: "₹6,500",
-    amount: 6500,
+    price: "₹5,999",
+    amount: 5999,
     popular: true,
     features: [
       "Everything in Basic",
