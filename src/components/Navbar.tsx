@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
         <div className="flex items-center gap-2">
           <Monitor className="h-5 w-5 text-primary" strokeWidth={1.5} />
-          <span className="text-lg font-semibold text-foreground">Enterprise GST Pro</span>
+          <span className="text-lg font-semibold text-foreground">My CRM</span>
         </div>
 
         <div className="hidden md:flex items-center gap-8">

@@ -76,7 +76,7 @@ const CheckoutModal = ({ plan, onClose }: CheckoutModalProps) => {
         key: data.key_id,
         amount: plan.amount * 100,
         currency: "INR",
-        name: "Enterprise GST Pro",
+        name: "My CRM",
         description: `${plan.name} Plan - One-time Purchase`,
         order_id: data.order_id,
         prefill: {

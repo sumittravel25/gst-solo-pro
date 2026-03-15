@@ -30,17 +30,12 @@ const HeroSection = () => {
             <p className="text-base md:text-lg text-muted leading-relaxed mb-8 max-w-lg" style={{ textWrap: "pretty" }}>
               A complete CRM bundled with a powerful GST invoice generator — all in a single offline desktop app. Pay once, download the .exe, and run your business.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="#pricing"
-                className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold transition-all duration-200 hover:bg-primary-hover active:scale-[0.98] shadow-button"
-              >
-                Get Started
-              </a>
-              <button className="px-8 py-4 rounded-lg font-semibold text-foreground border border-border hover:bg-secondary transition-all duration-200">
-                Watch Demo
-              </button>
-            </div>
+            <a
+              href="#pricing"
+              className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold transition-all duration-200 hover:bg-primary-hover active:scale-[0.98] shadow-button"
+            >
+              Get Started
+            </a>
           </motion.div>
 
           <motion.div
@@ -57,12 +52,12 @@ const HeroSection = () => {
                   <div className="w-3 h-3 rounded-full bg-accent/80" />
                   <div className="w-3 h-3 rounded-full bg-primary/80" />
                 </div>
-                <span className="text-xs text-primary-foreground/50 ml-2 font-medium">Enterprise GST Pro v3.2</span>
+                <span className="text-xs text-primary-foreground/50 ml-2 font-medium">My CRM v3.2</span>
               </div>
               <div className="relative">
                 <img
                   src={slides[currentSlide]}
-                  alt={`Enterprise GST Pro desktop application - view ${currentSlide + 1}`}
+                  alt={`My CRM desktop application - view ${currentSlide + 1}`}
                   className="w-full rounded-b-lg"
                   loading="eager"
                 />
