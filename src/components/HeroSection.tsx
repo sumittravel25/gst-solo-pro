@@ -30,17 +30,12 @@ const HeroSection = () => {
             <p className="text-base md:text-lg text-muted leading-relaxed mb-8 max-w-lg" style={{ textWrap: "pretty" }}>
               A complete CRM bundled with a powerful GST invoice generator — all in a single offline desktop app. Pay once, download the .exe, and run your business.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="#pricing"
-                className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold transition-all duration-200 hover:bg-primary-hover active:scale-[0.98] shadow-button"
-              >
-                Get Started
-              </a>
-              <button className="px-8 py-4 rounded-lg font-semibold text-foreground border border-border hover:bg-secondary transition-all duration-200">
-                Watch Demo
-              </button>
-            </div>
+            <a
+              href="#pricing"
+              className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold transition-all duration-200 hover:bg-primary-hover active:scale-[0.98] shadow-button"
+            >
+              Get Started
+            </a>
           </motion.div>
 
           <motion.div
