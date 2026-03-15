@@ -1,5 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import appScreenshot from "@/assets/app-screenshot.png";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import appScreenshot1 from "@/assets/app-screenshot-1.png";
+import appScreenshot2 from "@/assets/app-screenshot-2.png";
 
 const ease = [0.25, 0.1, 0.25, 1] as [number, number, number, number];
 
