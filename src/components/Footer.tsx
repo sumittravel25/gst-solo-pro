@@ -7,14 +7,14 @@ const Footer = () => {
             © 2026 My CRM. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
+            <a href="mailto:info@budfi.in" className="text-sm text-muted hover:text-foreground transition-colors duration-200">
+              info@budfi.in
+            </a>
             <a href="#" className="text-sm text-muted hover:text-foreground transition-colors duration-200">
               Privacy Policy
             </a>
             <a href="#" className="text-sm text-muted hover:text-foreground transition-colors duration-200">
               Terms of Service
-            </a>
-            <a href="#" className="text-sm text-muted hover:text-foreground transition-colors duration-200">
-              Support Documentation
             </a>
           </div>
         </div>
