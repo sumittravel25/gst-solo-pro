@@ -14,14 +14,14 @@ const HeroSection = () => {
             transition={{ duration: 0.5, ease }}
           >
             <p className="text-sm font-medium tracking-wide uppercase text-primary mb-4">
-              100% Offline. 0% Cloud Risk.
+              Complete CRM + Invoice Generator
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground leading-[1.1] mb-6">
-              GST Billing, Simplified.{" "}
-              <span className="text-muted">Professional Invoices in Seconds.</span>
+              All-in-One CRM{" "}
+              <span className="text-muted">with Built-in Invoice Generator.</span>
             </h1>
             <p className="text-base md:text-lg text-muted leading-relaxed mb-8 max-w-lg" style={{ textWrap: "pretty" }}>
-              A powerful, offline-first desktop suite built for Indian SMEs. No monthly subscriptions. Pay once, download, and start billing.
+              A complete CRM bundled with a powerful GST invoice generator — all in a single offline desktop app. Pay once, download the .exe, and run your business.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

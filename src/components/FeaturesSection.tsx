@@ -42,10 +42,10 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-4">
-            Built for Compliance. Designed for Speed.
+            CRM + Invoicing. One Powerful Desktop App.
           </h2>
           <p className="text-base text-muted max-w-2xl mx-auto" style={{ textWrap: "pretty" }}>
-            Everything you need to generate GST-compliant invoices without an internet connection.
+            Everything you need to manage clients and generate GST-compliant invoices — all offline.
           </p>
         </div>
 
