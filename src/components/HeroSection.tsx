@@ -6,8 +6,10 @@ import appScreenshot2 from "@/assets/app-screenshot-2.png";
 
 const ease = [0.25, 0.1, 0.25, 1] as [number, number, number, number];
 
+const slides = [appScreenshot1, appScreenshot2];
+
 const HeroSection = () => {
-  return (
+  const [currentSlide, setCurrentSlide] = useState(0);
     <section className="py-20 md:py-28">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
