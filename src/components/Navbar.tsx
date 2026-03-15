@@ -16,9 +16,6 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-3">
-          <button className="text-sm font-medium text-muted hover:text-foreground transition-colors duration-200 px-4 py-2">
-            Login
-          </button>
           <a
             href="#pricing"
             className="text-sm font-medium tracking-wide uppercase px-6 py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-primary-hover active:scale-[0.98] transition-all duration-200 shadow-button"

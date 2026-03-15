@@ -3,19 +3,19 @@ import { Calculator, ShieldCheck, UserCheck, FileImage, CheckCircle, IndianRupee
 
 const features = [
   {
+    icon: UserCheck,
+    title: "Complete CRM",
+    description: "Manage clients, leads, and contacts — all from one unified desktop application.",
+  },
+  {
     icon: Calculator,
-    title: "GST Intelligence",
-    description: "Automatic CGST/SGST and IGST splitting based on transaction type.",
+    title: "Built-in Invoice Generator",
+    description: "Generate GST-compliant invoices with automatic CGST/SGST and IGST calculations.",
   },
   {
     icon: ShieldCheck,
     title: "100% Offline Privacy",
     description: "Your data stays on your PC, never on the cloud. Ideal for privacy-conscious businesses.",
-  },
-  {
-    icon: UserCheck,
-    title: "Persistent Profiles",
-    description: "Save your business and bank details once; auto-fill for every future invoice.",
   },
   {
     icon: FileImage,
@@ -42,10 +42,10 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-4">
-            Built for Compliance. Designed for Speed.
+            CRM + Invoicing. One Powerful Desktop App.
           </h2>
           <p className="text-base text-muted max-w-2xl mx-auto" style={{ textWrap: "pretty" }}>
-            Everything you need to generate GST-compliant invoices without an internet connection.
+            Everything you need to manage clients and generate GST-compliant invoices — all offline.
           </p>
         </div>
 

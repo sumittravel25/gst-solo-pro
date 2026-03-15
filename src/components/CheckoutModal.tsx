@@ -110,9 +110,7 @@ const CheckoutModal = ({ plan, onClose }: CheckoutModalProps) => {
 
             toast.success("Payment successful! Redirecting to download...");
             onClose();
-            // Redirect to download page or show download link
-            // You can customize this URL
-            window.location.href = "/download";
+            window.location.href = "https://drive.google.com/file/d/18gdk5ykQjRVjjMj11aBXwT5L2lFAHCGY/view?usp=sharing";
           } catch {
             toast.error("Payment verification failed. Please contact support.");
           }

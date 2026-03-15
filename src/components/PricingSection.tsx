@@ -12,7 +12,7 @@ const plans = [
     amount: 1999,
     popular: false,
     features: [
-      "Standalone .exe file",
+      "Complete CRM + Invoice Generator .exe",
       "Lifetime access",
       "Professional PDF Export",
     ],
