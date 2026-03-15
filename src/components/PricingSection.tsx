@@ -8,8 +8,8 @@ const plans = [
     id: "basic" as const,
     name: "Basic",
     tag: "For Freelancers",
-    price: "₹1,999",
-    amount: 1999,
+    price: "₹2,499",
+    amount: 2499,
     popular: false,
     features: [
       "Complete CRM + Invoice Generator .exe",
