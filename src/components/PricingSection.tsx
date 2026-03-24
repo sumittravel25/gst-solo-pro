@@ -5,11 +5,13 @@ import CheckoutModal from "./CheckoutModal";
 
 const plans = [
   {
-    id: "basic" as const,
-    name: "Basic",
-    tag: "For Freelancers",
-    price: "₹2,499",
-    amount: 2499,
+    id: "crm" as const,
+    name: "CRM Tool",
+    tag: "For Sales Teams",
+    price: "₹14,999",
+    amount: 14999,
+    monthly: "₹999/mo",
+    monthlyAmount: 999,
     popular: false,
     features: [
       "Complete CRM + Invoice Generator .exe",
@@ -18,35 +20,37 @@ const plans = [
     ],
   },
   {
-    id: "business" as const,
-    name: "Business",
-    tag: "Most Popular",
-    price: "₹5,999",
-    amount: 5999,
-    popular: true,
+    id: "leadgen" as const,
+    name: "Lead Gen Tool",
+    tag: "For Marketers",
+    price: "₹9,999",
+    amount: 9999,
+    monthly: "₹999/mo",
+    monthlyAmount: 999,
+    popular: false,
     features: [
-      "Everything in Basic",
-      "Future Feature Updates",
-      "Priority Email Support",
-      "Remote Installation Support",
+      "Powerful Lead Generation Tool",
+      "Lifetime access",
+      "Export & Analytics",
     ],
   },
   {
-    id: "enterprise" as const,
-    name: "Enterprise",
-    tag: "For Growing Firms",
-    price: "₹9,999",
-    amount: 9999,
-    popular: false,
+    id: "bundle" as const,
+    name: "Bundle",
+    tag: "Best Value",
+    price: "₹21,999",
+    amount: 21999,
+    monthly: "₹1,499/mo",
+    monthlyAmount: 1499,
+    popular: true,
     features: [
-      "Everything in Business",
-      "Custom Invoice Layouts",
-      "1-on-1 Customization Assistance",
-      "White-labeling options",
+      "CRM Tool + Lead Gen Tool",
+      "Lifetime access",
+      "Priority Support",
+      "All Future Updates",
     ],
   },
 ];
-
 const ease = [0.25, 0.1, 0.25, 1] as [number, number, number, number];
 
 export type Plan = (typeof plans)[number];
