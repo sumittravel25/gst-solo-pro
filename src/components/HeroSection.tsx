@@ -21,14 +21,14 @@ const HeroSection = () => {
             transition={{ duration: 0.5, ease }}
           >
             <p className="text-sm font-medium tracking-wide uppercase text-primary mb-4">
-              Complete CRM + Invoice Generator
+              CRM + Lead Gen + Invoice Generator
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground leading-[1.1] mb-6">
-              All-in-One CRM{" "}
-              <span className="text-muted">with Built-in Invoice Generator.</span>
+              Find Leads.{" "}
+              <span className="text-muted">Manage Clients. Generate Invoices.</span>
             </h1>
             <p className="text-base md:text-lg text-muted leading-relaxed mb-8 max-w-lg" style={{ textWrap: "pretty" }}>
-              A complete CRM bundled with a powerful GST invoice generator — all in a single offline desktop app. Pay once, download the .exe, and run your business.
+              Two powerful offline desktop tools — a Lead Generation Tool to find verified contacts from any niche &amp; city, and a Complete CRM with GST invoicing to manage clients and bills. Pay once, download, and grow your business.
             </p>
             <a
               href="#pricing"
