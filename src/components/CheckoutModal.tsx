@@ -110,7 +110,12 @@ const CheckoutModal = ({ plan, onClose }: CheckoutModalProps) => {
 
             toast.success("Payment successful! Redirecting to download...");
             onClose();
-            window.location.href = "https://drive.google.com/file/d/18gdk5ykQjRVjjMj11aBXwT5L2lFAHCGY/view?usp=sharing";
+            const downloadLinks: Record<string, string> = {
+              crm: "https://drive.google.com/file/d/13juA-oE7DKCbPBArOpEPv9Xb2rodo_Hz/view?usp=sharing",
+              leadgen: "https://drive.google.com/file/d/11BlJprpWfdADpEixE6YoB5cbhBGHM_GL/view?usp=sharing",
+              bundle: "https://drive.google.com/file/d/1UNA_rNkdDhScrVu8GSYRwQ6TcCRATCJt/view?usp=sharing",
+            };
+            window.location.href = downloadLinks[plan.id] || downloadLinks.bundle;
           } catch {
             toast.error("Payment verification failed. Please contact support.");
           }
