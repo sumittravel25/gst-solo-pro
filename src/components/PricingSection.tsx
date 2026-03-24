@@ -99,6 +99,9 @@ const PricingSection = () => {
               <div className="mt-4 mb-6">
                 <span className="text-4xl font-semibold text-foreground tabular-nums">{plan.price}</span>
                 <span className="text-sm text-muted ml-2">one-time</span>
+                <div className="mt-1 text-sm text-primary font-medium">
+                  + {plan.monthly} for support
+                </div>
               </div>
 
               <ul className="space-y-3 mb-8">
